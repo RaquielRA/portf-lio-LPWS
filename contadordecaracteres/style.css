@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+
+}
+
+body {
+    background-color: rgb(255, 186, 197);
+}
+
+/*CONATINER I---------------------------------------------------------*/
+
+/*Escopo - Container I*/
+.containerI {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(255, 253, 253);
+    font-size: 3vw;
+    width: 100vw;
+    height: 10vw;
+    box-shadow: 10px 10px 30px 5px rgb(250, 208, 231);
+}
+
+/*Texto - Container I*/
+.containerI h1 {
+    color: rgb(252, 145, 163);
+}
+
+
+
+/*'CONATINER G' É a GRID PRINCIPAL que abriga 2 SubGrids. A SubGrid1 contém o elemento'INSERIR'. A SubGrid2 contém uma outra SubGrid 'BOTOES'(que contém 2 elementos) e os elementos 'RESULTADOTXT' e 'RESULTADO'.*/
+
+/*Escopo - Container G*/
+.containerG {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    text-align: justify;
+    width: 100vw;
+    margin-top: 4vw;
+}
+
+
+
+/*Escopo - GridUm----------------------------------------------------------------------------------------------*/
+.containerG .gridUm {
+    color: rgb(252, 145, 163);
+    display: grid;
+    justify-items: center;
+    width: 50vw;
+    height: 22vw;
+}
+
+
+
+
+/*INSERIR ----------------------------------------------------------------------------------------------------*/
+
+/*Escopo - Inserir*/
+.containerG .gridUm .inserir {
+    background-color: rgb(255, 253, 253);
+    width: 60vw;
+    height: 35vw;
+    margin-bottom: 5vw;
+    border-radius: 30px;
+    box-shadow: 10px 10px 30px 5px rgb(250, 208, 231);
+    border: solid 1px rgb(252, 145, 163);
+    box-sizing: border-box;
+    user-select: none;
+}
+
+
+/*Texto - Inserir*/
+.containerG .gridUm .inserir label h1 {
+    font-size: 2vw;
+    color: rgb(252, 145, 163);
+    padding: 1vw;
+
+}
+
+
+/* Caixa de Texto - Inserir */
+.containerG .gridUm .inserir textarea {
+    width: 56vw;
+    height: 20vw;
+    padding: 1vw;
+    font-size: 20px;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    color: rgb(252, 145, 163);
+    background: transparent;
+    resize: none; /* Desativa o redimensionamento manual */
+}
+
+.containerG .gridUm .inserir textarea::placeholder {
+    color: #aaa;
+}
+
+.containerG .gridUm .inserir textarea:focus {
+    outline: none;
+}
+
+.containerG .gridUm .inserir textarea::-webkit-inner-spin-button,
+.containerG .gridUm .inserir textarea::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/*Escopo - GridDois----------------------------------------------------------------------------------------------*/
+
+.containerG .gridDois {
+    color: rgb(252, 145, 163);
+    display: grid;
+    justify-items: center;
+    width: 30vw;
+    height: 22vw;
+
+}
+
+
+
+/*RESULTADOTXT----------------------------------------------------------------------------------------------*/
+
+/*Escopo - ResultadoTxt*/
+.resultadoTxt {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 1vw;
+    background-color: rgb(255, 253, 253);
+    width: 18vw;
+    height: 4vw;
+    border-radius: 30px 30px 0px 0px;
+    box-shadow: 10px 10px 30px 5px rgb(250, 208, 231);
+    border: solid 1px rgb(252, 145, 163);
+    border-bottom: none;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+
+/*Texto - ResultadoTxt*/
+.resultadoTxt h1 {
+    font-size: 2vw;
+}
+
+
+
+/*RESULTADO-----------------------------------------------------------------------------------------------------*/
+
+/*Escopo - Resultado*/
+.containerG .gridDois .resultado {
+    background-color: rgb(255, 253, 253);
+    width: 18vw;
+    height: 18vw;
+    border-radius: 0px 0px 30px 30px;
+    box-shadow: 10px 10px 30px 5px rgb(250, 208, 231);
+    border-top: none;
+    border: solid 1px rgb(252, 145, 163);
+    box-sizing: border-box;
+    user-select: none;
+    font-size: 20px;
+    color: rgb(252, 145, 163);
+    padding: 1vw;
+
+}
+
+
+
+/*BOTÕES -------------------------------------------------------------------------------------------------------*/
+
+/*Escopo - GridUmB*/
+.containerG .gridDois .gridUmB {
+    width: 19vw;
+    height: 10vw;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 3vw;
+}
+
+
+/*Texto - Botoes*/
+.containerG .gridDois .gridUmB .botaoF button, .botaoR button {
+    font-size: 2vw;
+    padding: 1vw;
+}
+
+
+/*Escopo - Botoes*/
+.botaoF button, .botaoR button{
+    background-color: rgb(252, 145, 163);
+    width: 19vw;
+    height: 4vw;
+    text-align: center;
+    align-content: center;
+    border-radius: 30px;
+    box-shadow: 10px 10px 30px 5px rgb(250, 208, 231);
+    border: solid 1px rgb(252, 145, 163);
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    color: #fff;
+    font-size: 2vw;
+    transition: background-color 0.3s;
+    transition: transform 0.3s;
+    transition: box-shadow 0.1s;
+}
+
+
+/*Ao passar o cursor - Botoes*/
+.botaoF :hover, .botaoR :hover{
+    border: solid 2px rgb(255, 132, 152);
+    background-color: rgb(255, 132, 152);
+
+}
+
+/*Ao clicar - Botoes*/
+.botaoF :active, .botaoR :active {
+    border: solid 2px rgb(255, 132, 152);
+    transform: translateY(-5px);
+    background-color: rgb(255, 132, 152);
+    box-shadow: 10px 10px 30px 5px rgb(250, 208, 231);
+}
+
+
+
+
+
+/*RESPONSIVIDADE ABAIXO DE 850PX=============================================================================================================*/
+
+@media screen and (max-width: 850px) {
+
+    * {
+        overflow-x: hidden;
+    }
+
+
+    /*Container I*/
+    .containerI {
+        height: 17vw;
+        font-size: 3vw;
+    }
+
+
+    /*Container Grid Principal*/
+    .containerG {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        margin-top: 14vw;
+    }
+
+
+    /*Grid Um---------------------------------------------------------------------------------------------------------------*/
+    .containerG .gridUm {
+        width: 81vw;
+        height: 42vw;
+        margin-bottom: 1vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+
+    /*Grid Um - INSERIR*/
+    .containerG .gridUm .inserir {
+        width: 40vw;
+        height: 30vw;
+    }
+
+
+    /*Texto - INSERIR*/
+    .containerG .gridUm .inserir label h1 {
+        padding: 2vw;
+        font-size: 3vw;
+    }
+
+
+    .containerG .gridUm .inserir input {
+        font-size: 17px;
+    }
+
+
+    /*Grid Um - Grid UM B*/
+    .containerG .gridUm .gridUmB {
+        width: 30vw;
+        height: 30vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+
+
+    }
+
+
+    /*Grid Um - Grid UM B - BOTOES*/
+    .containerG .gridDois .gridUmB .botaoF button, .botaoR button {
+        width: 30vw;
+        height: 10vw;
+
+    }
+
+
+    /*Texto - BOTOES*/
+    .containerG .gridDois .gridUmB .botaoF button, .botaoR button {
+        font-size: 3vw;
+    }
+
+
+
+    /*Grid Dois---------------------------------------------------------------------------------------------------------------*/
+    .containerG .gridDois {
+        overflow: hidden;
+        width: 81vw;
+        height: 30vw;
+    }
+
+
+    /*Escopo - ResultadoTxt*/
+    .containerG .gridDois .resultadoTxt {
+        overflow: hidden;
+        width: 81vw;
+        height: 9vw;
+        font-size: 14vw;
+    }
+
+    /*Texto - ResultadoTxt*/
+    .containerG .gridDois .resultadoTxt h1 {
+        font-size: 3vw;
+        padding: 1vw;
+    }
+
+    /*Escopo - Resultado*/
+    .containerG .gridDois .resultado {
+        width: 81vw;
+        height: 21vw;
+        font-size: 17px;
+        padding: 2vw;
+    }
+
+
+}

@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Flow+Circular&family=Signika:wght@300..700&display=swap');
+
+* {
+    font-family: "Arima", system-ui;
+}
+
+body {
+    background-color: rgb(255, 253, 253);
+    color:  #fff;
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: grid;
+}
+
+.container {
+    width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: rgb(255, 186, 197);
+    border-radius: 30px;
+    box-shadow: 0 0 15px 5px rgb(255, 227, 232);
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+textarea {
+    background-color: rgb(255, 242, 244);
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+}
+
+textarea:focus {
+    border: solid 3px rgb(252, 145, 163);
+    outline: none;
+}
+
+button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: rgb(255, 131, 152);
+    color: #343434;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: pink;
+}
+
+button:active {
+    transform: translateY(-5px);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    color: #343434;
+    padding: 10px;
+    background-color: rgb(255, 242, 244);
+    margin-bottom: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;/* Limita a largura do li a 35 caracteres */
+    white-space: normal; /* Permite que o texto quebre em várias linhas */
+    overflow-wrap: break-word; /* Quebra palavras longas */
+}
+
+li span {
+    width: 100%;
+    overflow-wrap: break-word; /* Quebra palavras longas */
+    word-wrap: break-word; 
+    white-space: normal; /* Permite quebra de linha */
+}
+
+.deleteButton {
+    margin-left: 5px;
+}

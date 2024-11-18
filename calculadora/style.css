@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #c3c1c1;
+    background-color: rgb(255, 253, 253);
 
 }
 
@@ -25,7 +25,7 @@ body {
     margin-top: 3vw;
     margin-bottom: 3vw;
     display: grid;
-    background-image: url(img/fundoR.png);
+    background-color: rgb(255, 186, 197);
     /*background-color: #ffd0e7;*/
     font-size: 3vw;
     width: 300px;
@@ -172,7 +172,7 @@ body {
 .div button {
     width: 65px;
     height: 65px;
-    background-color: rgb(255, 179, 217);
+    background-color: rgb(255, 119, 187);
     border-radius: 50%;
     text-align: center;
     align-content: center;
