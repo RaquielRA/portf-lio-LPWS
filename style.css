@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+
+}
+
+body {
+    background-color: #c3c1c1;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.containerT {
+    border: solid 2px rgb(247, 202, 224);
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    display: grid;
+    background-image: url(img/fundoR.png);
+    /*background-color: #ffd0e7;*/
+    font-size: 3vw;
+    width: 300px;
+    height: 650px;
+    box-shadow: 10px 10px 30px 5px #00000013;
+    border-radius: 70px 70px 50px 50px;
+}
+
+.containerO {
+    margin-top: 200px;
+    width: 300px;
+    height: 650px;
+    position: relative;
+    border-radius: 70px 70px 50px 50px;
+}
+
+.orelha {
+    width: 90px;
+    height: 90px;
+    /* Cor das orelhas */
+    position: absolute;
+    top: -13px;
+    /* Posiciona as orelhas acima do container */
+
+}
+
+.orelha.left {
+    background-image: url(img/orelhaf.png);
+    background-repeat: no-repeat;
+    /* Impede a repetição da imagem de fundo */
+    background-size: cover;
+    /* Opcional: cobre todo o elemento */
+    left: -5px;
+    /* Posiciona a orelha esquerda */
+    transform: rotate(-20deg);
+    /* Rotaciona um pouco */
+}
+
+.orelha.right {
+
+    background-image: url(img/orelhaf.png);
+    background-repeat: no-repeat;
+    /* Impede a repetição da imagem de fundo */
+    background-size: cover;
+    /* Opcional: cobre todo o elemento */
+    right: -220px;
+    /* Posiciona a orelha direita */
+    transform: rotate(20deg);
+    /* Rotaciona um pouco */
+}
+
+
+.containerT .tela {
+    width: 280px;
+    height: 220px;
+    margin: 10px 10px 10px 10px;
+    border-radius: 7px 7px 0px 0px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+
+
+}
+
+
+.containerT .C {
+    margin: 10px;
+    width: 280px;
+    height: 50px;
+    display: flex;
+
+    justify-content: space-around;
+}
+
+.containerT .teclas {
+    margin: 10px;
+    width: 280px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+
+
+
+.containerT .C .reset button {
+    width: 205px;
+    height: 40px;
+    background-color: rgb(255, 119, 187);
+    border-radius: 90px;
+    text-align: center;
+    align-content: center;
+    border: solid 1px rgb(255, 179, 217);
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    color: #fff;
+    font-size: 22px;
+    transition: background-color 0.3s;
+    transition: transform 0.3s;
+    transition: box-shadow 0.1s;
+}
+
+.containerT .C .delete button {
+    width: 65px;
+    height: 40px;
+    background-image: url(img/deletee.png);
+    border-radius: 90px;
+    text-align: center;
+    align-content: center;
+    border: solid 1px rgb(255, 179, 217);
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    color: #fff;
+    font-size: 22px;
+    transition: background-color 0.3s;
+    transition: transform 0.3s;
+    transition: box-shadow 0.1s;
+}
+
+
+/*Escopo - Botoes*/
+.um button,
+.dois button,
+.tres button,
+.adi button,
+.quatro button,
+.cinco button,
+.seis button,
+.sub button,
+.sete button,
+.oito button,
+.nove button,
+.mul button,
+.zero button,
+.ponto button,
+.igual button,
+.div button {
+    width: 65px;
+    height: 65px;
+    background-color: rgb(255, 179, 217);
+    border-radius: 50%;
+    text-align: center;
+    align-content: center;
+    border: solid 1px rgb(255, 179, 217);
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    color: #fff;
+    font-size: 22px;
+    transition: background-color 0.3s;
+    transition: transform 0.3s;
+    transition: box-shadow 0.1s;
+}
+
+.igual button {
+    background-color: rgb(255, 119, 187);
+}
+
+
+/*Ao passar o cursor - Botoes*/
+.um :hover,
+.dois :hover,
+.tres :hover,
+.adi :hover,
+.quatro :hover,
+.cinco :hover,
+.seis :hover,
+.sub :hover,
+.sete :hover,
+.oito :hover,
+.nove :hover,
+.mul :hover,
+.zero :hover,
+.ponto :hover,
+.igual :hover,
+.div :hover,
+.reset :hover,
+.delete :hover {
+
+    border: solid 2px rgb(255, 119, 187);
+    background-color: rgb(253, 129, 191);
+}
+
+/*Ao clicar - Botoes*/
+.um :active,
+.dois :active,
+.tres :active,
+.adi :active,
+.quatro :active,
+.cinco :active,
+.seis :active,
+.sub :active,
+.sete :active,
+.oito :active,
+.nove :active,
+.mul :active,
+.zero :active,
+.ponto :active,
+.igual :active,
+.div :active,
+.reset :active,
+.delete :active {
+
+    transform: translateY(-5px);
+    background-color: rgb(253, 129, 191);
+    box-shadow: 0px 0px 2px 2px rgb(255, 179, 217);
+}
+
+.resultado {
+    font-size: 50px;
+    color: rgb(255, 119, 187);
+    overflow: hidden;
+    /* Esconde qualquer conteúdo que ultrapasse */
+    white-space: nowrap;
+    /* Não permite quebras de linha */
+    text-overflow: ellipsis;
+    /* Adiciona "..." se o texto for muito longo */
+    overflow-x: auto;
+    /* Permite rolagem horizontal */
+    overflow-y: hidden;
+    /* Esconde rolagem vertical */
+}
